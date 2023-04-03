@@ -1,6 +1,8 @@
+using System;
 using Boilerplate.Attributes;
 using Boilerplate.EventChannels;
 using Boilerplate.InputLayoutCommons;
+using Boilerplate.Utilities;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.DualShock;
@@ -10,13 +12,41 @@ namespace Boilerplate.InputLayout
 {
     public class InputLayout : MonoBehaviour
     {
+        #region Variables
+
         [Foldout("References")]
         [SerializeField] private InputLayoutData _data;
 
         [Foldout("Broadcasters")]
         [SerializeField] private TextureEventChannel _spriteAtlasUpdateEvent;
 
-        public InputLayoutType OnInputLayoutChanged(PlayerInput playerInput)
+        [Foldout("Listeners")]
+        [SerializeField] private PlayerInputEventChannel _onControlSchemeChangedEvent;
+
+        [Foldout("Debug")]
+        [SerializeField, ReadOnly] private InputLayoutType _inputLayoutType;
+
+        #endregion
+
+        #region Messages
+
+        private void OnEnable() => EventUtils.AddEventListener(_onControlSchemeChangedEvent, OnControlSchemeChanged);
+
+        private void OnDisable() => EventUtils.RemoveEventListener(_onControlSchemeChangedEvent, OnControlSchemeChanged);
+
+        #endregion
+
+        #region Methods
+
+        private void OnControlSchemeChanged(PlayerInput playerInput)
+        {
+            if (_inputLayoutType == GetCurrentInputLayout(playerInput))
+                return;
+
+            _inputLayoutType = OnInputLayoutChanged(playerInput);
+        }
+
+        private InputLayoutType OnInputLayoutChanged(PlayerInput playerInput)
         {
             var inputLayout = GetCurrentInputLayout(playerInput);
 
@@ -28,16 +58,16 @@ namespace Boilerplate.InputLayout
 
         private InputLayoutType GetCurrentInputLayout(PlayerInput playerInput)
         {
-            switch (playerInput.devices[0])
+            switch (playerInput.devices[0].GetType().Name)
             {
-                case Mouse:
-                case Keyboard:
+                case "Mouse":
+                case "Keyboard":
                     return InputLayoutType.KeyboardAndMouse;
-                case XInputController:
+                case "XInputController":
                     return InputLayoutType.Xbox;
-                case DualShockGamepad:
+                case "DualShockGamepad":
                     return InputLayoutType.Playstation;
-                case Touchscreen:
+                case "Touchscreen":
                     return InputLayoutType.Touch;
                 default:
                     return InputLayoutType.Xbox;
@@ -70,5 +100,7 @@ namespace Boilerplate.InputLayout
                 Cursor.visible = false;
             }
         }
+
+        #endregion
     }
 }
