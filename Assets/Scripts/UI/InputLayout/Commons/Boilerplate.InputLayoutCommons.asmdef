@@ -1,0 +1,17 @@
+{
+    "name": "Boilerplate.InputLayoutCommons",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9abb106e347d9ad41a8e1da253da6d71",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

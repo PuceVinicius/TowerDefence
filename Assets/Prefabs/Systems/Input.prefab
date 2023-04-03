@@ -1,0 +1,331 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2332720159691007978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6006765004198463271}
+  - component: {fileID: 116643968577136651}
+  - component: {fileID: 5137703430897576414}
+  m_Layer: 0
+  m_Name: PlayerInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6006765004198463271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332720159691007978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8084603371195560235}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &116643968577136651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332720159691007978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 1027110159466549063}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5137703430897576414}
+        m_TargetAssemblyTypeName: Boilerplate.Input.PlayerInputReader, Boilerplate.Input
+        m_MethodName: OnControlsChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5137703430897576414}
+        m_TargetAssemblyTypeName: Boilerplate.Input.PlayerInputReader, Boilerplate.Input
+        m_MethodName: OnConfirmInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 09336319-ee49-42da-adc8-90da1ce52686
+    m_ActionName: UI/Confirm[/XInputControllerWindows/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5137703430897576414}
+        m_TargetAssemblyTypeName: Boilerplate.Input.PlayerInputReader, Boilerplate.Input
+        m_MethodName: OnBackInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 82e533a7-4bb8-4200-8a32-829660dbcea7
+    m_ActionName: UI/Back[/XInputControllerWindows/buttonEast]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5137703430897576414}
+        m_TargetAssemblyTypeName: Boilerplate.Input.PlayerInputReader, Boilerplate.Input
+        m_MethodName: OnNextInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5d3ec286-4557-49f2-936b-987b8905a6bf
+    m_ActionName: UI/Next[/XInputControllerWindows/rightShoulder]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5137703430897576414}
+        m_TargetAssemblyTypeName: Boilerplate.Input.PlayerInputReader, Boilerplate.Input
+        m_MethodName: OnPreviousInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6bbad2d5-b272-4dd3-9809-02278575af59
+    m_ActionName: UI/Previous[/XInputControllerWindows/leftShoulder]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5137703430897576414}
+        m_TargetAssemblyTypeName: Boilerplate.Input.PlayerInputReader, Boilerplate.Input
+        m_MethodName: OnUIPauseInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: abb81cd8-239f-42c7-9fce-f231c4aa1a68
+    m_ActionName: UI/Pause[/XInputControllerWindows/start,/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5137703430897576414}
+        m_TargetAssemblyTypeName: Boilerplate.Input.PlayerInputReader, Boilerplate.Input
+        m_MethodName: OnGameplayPauseInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 903f49e3-e459-4ff9-9b2a-c9cdc30fdb18
+    m_ActionName: Gameplay/Pause[/XInputControllerWindows/start,/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 24d6cf3b-d1f2-436e-a470-36de6f357773
+    m_ActionName: UI/New action
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: UI
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &5137703430897576414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332720159691007978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b272d68033b32fe4cb412cdaaef516b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerInput: {fileID: 116643968577136651}
+  _onControlsChangedEvent: {fileID: 11400000, guid: 76d55acba6573d24fad787442dc83a3b,
+    type: 2}
+  _inputAnyEvent: {fileID: 11400000, guid: 2443c35aec3a50e40b8927b24c6e1612, type: 2}
+  _onToggleInputsEvent: {fileID: 11400000, guid: 63f9ff1504fb7614f955f48c08a496ad,
+    type: 2}
+  _setUIActionMapEvent: {fileID: 11400000, guid: 6877dce556a03894fa7e40db0a53e2b3,
+    type: 2}
+  _setGameplayActionMapEvent: {fileID: 11400000, guid: 319c3ed3b9ff7174590673d6475b877f,
+    type: 2}
+  _inputGameplayPauseEvent: {fileID: 11400000, guid: 2de22d436d6cd18469ffc86c5b4544d7,
+    type: 2}
+  _inputUIConfirmEvent: {fileID: 11400000, guid: d100177d78ad081479214c342ad65ef4,
+    type: 2}
+  _inputUIBackEvent: {fileID: 11400000, guid: fb6b99f98ce62bb4694040c322e43639, type: 2}
+  _inputUINextEvent: {fileID: 11400000, guid: 57792c01757a90d43a06a3093258cf9f, type: 2}
+  _inputUIPreviousEvent: {fileID: 11400000, guid: a3e030709127efe418f315471e93e9ef,
+    type: 2}
+  _inputUIPauseEvent: {fileID: 11400000, guid: eefaf3a1679f89f40b21e4418ed2858b, type: 2}
+--- !u!1 &5409752258538823678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8084603371195560235}
+  m_Layer: 0
+  m_Name: Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8084603371195560235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5409752258538823678}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1002.77246, y: 464.5615, z: 0.49873364}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 660337247893447935}
+  - {fileID: 6006765004198463271}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5749898082709400949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660337247893447935}
+  - component: {fileID: 9191893631338334775}
+  - component: {fileID: 1027110159466549063}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &660337247893447935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5749898082709400949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8084603371195560235}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9191893631338334775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5749898082709400949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &1027110159466549063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5749898082709400949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_PointAction: {fileID: 1988467271794965685, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_MoveAction: {fileID: 5519107233620117563, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_SubmitAction: {fileID: -164377852781375338, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_CancelAction: {fileID: 7013616043791650539, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_LeftClickAction: {fileID: 2871044484860248040, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_MiddleClickAction: {fileID: 6098586649225581947, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_RightClickAction: {fileID: 4097972978818827478, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_ScrollWheelAction: {fileID: -4342922053598688515, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: -8639908411920804866, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 4408323999587158459, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0

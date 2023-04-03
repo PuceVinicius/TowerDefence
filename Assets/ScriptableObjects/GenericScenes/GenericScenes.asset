@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 701b3a863d88ddc458c6373bd60df547, type: 3}
+  m_Name: GenericScenes
+  m_EditorClassIdentifier: 
+  description: References all generic GameScenes
+  _managersScene: {fileID: 11400000, guid: ee79c721088c09549a0719ed66c664f2, type: 2}
+  _onboardingScene: {fileID: 11400000, guid: 1228bde981d39d74196c7ba03b2446c9, type: 2}
+  _menuScene: {fileID: 11400000, guid: e259ac09320675e46900293aa98e5081, type: 2}
+  _gameplayScene: {fileID: 11400000, guid: 93c2de045ab43a14296e2a1c4dcf2946, type: 2}

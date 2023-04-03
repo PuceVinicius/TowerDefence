@@ -1,0 +1,19 @@
+{
+  "name": "Boilerplate.MainMenu",
+  "rootNamespace": "",
+  "references": [
+    "GUID:9abb106e347d9ad41a8e1da253da6d71",
+    "GUID:c739c967ac20fdd488114e647785a9ff",
+    "GUID:b47d0f029e315994391e5d94fd95d78a",
+    "GUID:e9821403d55b8b44b8259a549d355123"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

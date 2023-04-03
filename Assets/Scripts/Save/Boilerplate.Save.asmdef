@@ -1,0 +1,20 @@
+{
+    "name": "Boilerplate.Save",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9abb106e347d9ad41a8e1da253da6d71",
+        "GUID:b47d0f029e315994391e5d94fd95d78a",
+        "GUID:c474d5e0575310c42a02cb8e80831e9a",
+        "GUID:2331c772816154a43bf5480544445b89",
+        "GUID:e9821403d55b8b44b8259a549d355123"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
