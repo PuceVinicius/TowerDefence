@@ -861,6 +861,12 @@ PrefabInstance:
       propertyPath: _spawner
       value: 
       objectReference: {fileID: 1659273153}
+    - target: {fileID: 2443501550994064158, guid: 25f9dfa85b816094c94e9382a4eef26b,
+        type: 3}
+      propertyPath: _trueTower
+      value: 
+      objectReference: {fileID: 4465658574986992691, guid: 0325e11c9c1c1f2418464e0f694ce218,
+        type: 3}
     - target: {fileID: 6335073848032783672, guid: 25f9dfa85b816094c94e9382a4eef26b,
         type: 3}
       propertyPath: m_Name

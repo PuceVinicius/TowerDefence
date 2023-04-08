@@ -24,16 +24,20 @@ public class SpawnerPrototype : MonoBehaviour
     public Transform _target;
     public Transform _parent;
     public Transform _spawnPoint;
+    public bool _finished;
+    public bool blocks;
 
     private HashSet<UnitPrototype> _activeUnits = new HashSet<UnitPrototype>();
 
     private float _currentDelay;
     private NavMeshPath _path;
     private NavMeshData _dataCopy;
+    private int counter;
 
     private void Awake()
     {
         _path = new NavMeshPath();
+        _surface.UpdateNavMesh();
     }
 
     private void Update()
@@ -53,6 +57,7 @@ public class SpawnerPrototype : MonoBehaviour
 
         var unit = Instantiate(_unitPrototype, _spawnPoint.position, Quaternion.identity, _parent);
         _activeUnits.Add(unit);
+        unit.name = $"Unit ({counter++})";
         unit.SetTarget(_target);
         unit.SetSpawner(this);
     }
@@ -102,6 +107,8 @@ public class SpawnerPrototype : MonoBehaviour
 
     private IEnumerator CheckBlockingPathCoroutine(NavMeshObstacle navMeshObstacle)
     {
+        _finished = false;
+
         navMeshObstacle.carving = true;
         navMeshObstacle.carveOnlyStationary = false;
 
@@ -138,7 +145,7 @@ public class SpawnerPrototype : MonoBehaviour
 
         Profiler.EndSample();
 
-        var blocks = false;
+        blocks = false;
         foreach (var unit in _activeUnits)
         {
             if (unit._agent.isOnNavMesh is false)
@@ -153,7 +160,9 @@ public class SpawnerPrototype : MonoBehaviour
 
         Debug.Log("It blocks the path? " + blocks + " " /*+ Time.time*/);
 
+        _finished = true;
         navMeshObstacle.carving = false;
+
         _surface.RemoveData();
         _surface.navMeshData = _beforeCheck;
         _surface.AddData();
