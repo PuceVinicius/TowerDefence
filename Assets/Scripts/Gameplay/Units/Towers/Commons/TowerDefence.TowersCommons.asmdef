@@ -1,0 +1,16 @@
+{
+    "name": "TowerDefence.TowersCommons",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ea00055660153e94da9dc865a3770161"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

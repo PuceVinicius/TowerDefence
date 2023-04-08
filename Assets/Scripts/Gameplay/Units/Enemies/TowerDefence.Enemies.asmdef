@@ -1,0 +1,18 @@
+{
+  "name": "TowerDefence.Enemies",
+  "rootNamespace": "",
+  "references": [
+    "GUID:9abb106e347d9ad41a8e1da253da6d71",
+    "GUID:ea00055660153e94da9dc865a3770161",
+    "GUID:9ce9cfa92cf840e41a3349d87af8d0f1"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
