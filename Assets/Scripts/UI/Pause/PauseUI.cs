@@ -60,6 +60,8 @@ namespace Boilerplate.Pause
             _menuButton.onClick.AddListener(OnMenuClick);
             _quitButton.onClick.AddListener(OnQuitClick);
 
+            Time.timeScale = 1;
+
             EventUtils.RemoveEventListener(_inputGameplayPauseEvent, OpenPause);
             EventUtils.RemoveEventListener(_inputUIPauseEvent, ClosePause);
             EventUtils.RemoveEventListener(_inputUIBackEvent, ClosePause);
@@ -74,6 +76,8 @@ namespace Boilerplate.Pause
             _iconSubcanvas.SetActive(false);
             _pauseSubcanvas.SetActive(true);
 
+            Time.timeScale = 0;
+
             EventSystem.current.SetSelectedGameObject(_firstToSelectGameObject);
 
             EventUtils.BroadcastEvent(_setUIActionMapEvent);
@@ -83,6 +87,8 @@ namespace Boilerplate.Pause
         {
             _iconSubcanvas.SetActive(true);
             _pauseSubcanvas.SetActive(false);
+
+            Time.timeScale = 1;
 
             EventUtils.BroadcastEvent(_setGameplayActionMapEvent);
         }

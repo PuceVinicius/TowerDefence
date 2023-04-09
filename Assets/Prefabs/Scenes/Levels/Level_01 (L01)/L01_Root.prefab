@@ -40,6 +40,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1215272783452044500}
     m_Modifications:
+    - target: {fileID: 3035390074853376155, guid: 60291294dee4af545bc84693f805b7a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3901268424862133846, guid: 60291294dee4af545bc84693f805b7a1,
         type: 3}
       propertyPath: m_RootOrder
@@ -95,6 +100,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4341394384810844128, guid: 60291294dee4af545bc84693f805b7a1,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 251fe11e3443e0048a70610509502322,
+        type: 2}
     - target: {fileID: 7951508179611433539, guid: 60291294dee4af545bc84693f805b7a1,
         type: 3}
       propertyPath: m_Name
@@ -108,6 +119,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2414758090240467377}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2142950913794260561 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4341394384810844128, guid: 60291294dee4af545bc84693f805b7a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2414758090240467377}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6465082227196944829 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8663350874523516940, guid: 60291294dee4af545bc84693f805b7a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2414758090240467377}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4f74493afcaa143afceb0fbce0d672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2523986462137521461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -115,6 +150,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1215272783452044500}
     m_Modifications:
+    - target: {fileID: 1059529876364693067, guid: a940d59511187114f96b46b087182719,
+        type: 3}
+      propertyPath: _preview
+      value: 
+      objectReference: {fileID: 6465082227196944829}
+    - target: {fileID: 1059529876364693067, guid: a940d59511187114f96b46b087182719,
+        type: 3}
+      propertyPath: _surface
+      value: 
+      objectReference: {fileID: 2142950913794260561}
     - target: {fileID: 3906174332787962287, guid: a940d59511187114f96b46b087182719,
         type: 3}
       propertyPath: m_Name

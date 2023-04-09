@@ -2,6 +2,7 @@
   "name": "TowerDefence.Towers",
   "references": [
     "GUID:9abb106e347d9ad41a8e1da253da6d71",
-    "GUID:0909f086f0d030d4ba81f9ce36a2f12a"
+    "GUID:0909f086f0d030d4ba81f9ce36a2f12a",
+    "GUID:ea00055660153e94da9dc865a3770161"
   ]
 }

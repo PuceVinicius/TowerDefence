@@ -1,7 +1,15 @@
 {
     "name": "TowerDefence.TowersManagers",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:9abb106e347d9ad41a8e1da253da6d71",
+        "GUID:2331c772816154a43bf5480544445b89",
+        "GUID:8c4dd21966739024fbd72155091d199e",
+        "GUID:0909f086f0d030d4ba81f9ce36a2f12a",
+        "GUID:e9821403d55b8b44b8259a549d355123",
+        "GUID:b47d0f029e315994391e5d94fd95d78a",
+        "GUID:ea00055660153e94da9dc865a3770161"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

@@ -198,6 +198,30 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 4a105e7e-67b6-4bf7-8d5c-34076414e20f
     m_ActionName: UI/TrackedOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5137703430897576414}
+        m_TargetAssemblyTypeName: Boilerplate.Input.PlayerInputReader, Boilerplate.Input
+        m_MethodName: OnPlaceTowerInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c7c82b72-bbd3-4cea-9510-17e0877dfc33
+    m_ActionName: Gameplay/PlaceTower[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 67e4d03a-4846-4c84-b2f5-eb392fdec2e0
+    m_ActionName: Gameplay/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4e5c38ed-fe7d-4c34-9ef2-9780897132e6
+    m_ActionName: Gameplay/LeftClick[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI
@@ -216,6 +240,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 116643968577136651}
+  _uiModule: {fileID: 1027110159466549063}
+  _gameplayModule: {fileID: 3401732068251880777}
   _onControlsChangedEvent: {fileID: 11400000, guid: 76d55acba6573d24fad787442dc83a3b,
     type: 2}
   _inputAnyEvent: {fileID: 11400000, guid: 2443c35aec3a50e40b8927b24c6e1612, type: 2}
@@ -226,6 +252,10 @@ MonoBehaviour:
   _setGameplayActionMapEvent: {fileID: 11400000, guid: 319c3ed3b9ff7174590673d6475b877f,
     type: 2}
   _inputGameplayPauseEvent: {fileID: 11400000, guid: 2de22d436d6cd18469ffc86c5b4544d7,
+    type: 2}
+  _inputStartPlaceTowerEvent: {fileID: 11400000, guid: ae508c04fd08d2640987de51cc2df63b,
+    type: 2}
+  _inputEndPlaceTowerEvent: {fileID: 11400000, guid: 74191b643aa922a46858311871d35e5c,
     type: 2}
   _inputUIConfirmEvent: {fileID: 11400000, guid: d100177d78ad081479214c342ad65ef4,
     type: 2}
@@ -277,6 +307,7 @@ GameObject:
   - component: {fileID: 660337247893447935}
   - component: {fileID: 9191893631338334775}
   - component: {fileID: 1027110159466549063}
+  - component: {fileID: 3401732068251880777}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -350,6 +381,38 @@ MonoBehaviour:
     type: 3}
   m_TrackedDeviceOrientationAction: {fileID: 4408323999587158459, guid: 34548509893f2ed4f87ff8e5a4d58426,
     type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+--- !u!114 &3401732068251880777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5749898082709400949}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_PointAction: {fileID: -4802082611395809930, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_MoveAction: {fileID: 0}
+  m_SubmitAction: {fileID: 0}
+  m_CancelAction: {fileID: 0}
+  m_LeftClickAction: {fileID: -3946991507954152229, guid: 34548509893f2ed4f87ff8e5a4d58426,
+    type: 3}
+  m_MiddleClickAction: {fileID: 0}
+  m_RightClickAction: {fileID: 0}
+  m_ScrollWheelAction: {fileID: 0}
+  m_TrackedDevicePositionAction: {fileID: 0}
+  m_TrackedDeviceOrientationAction: {fileID: 0}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0

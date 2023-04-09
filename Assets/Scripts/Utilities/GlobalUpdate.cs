@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Boilerplate.Utilities
 {
-    public class GlobalUtilities : MonoBehaviour
+    public class GlobalUpdate : MonoBehaviour
     {
         #region Events
 

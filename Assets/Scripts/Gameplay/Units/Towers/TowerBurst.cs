@@ -1,21 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TowerDefence.TowersCommons;
 using UnityEngine;
 
 namespace TowerDefence.Towers
 {
-    public class BurstTower : MonoBehaviour
+    public class TowerBurst : Tower
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
     }
 }

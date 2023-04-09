@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,16 +7,12 @@ namespace TowerDefence.EnemiesManagers
 {
     public class EnemiesDestination : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
+        private void OnTriggerEnter(Collider other)
         {
+            if (other.gameObject.layer != LayerMask.NameToLayer("Unit"))
+                return;
 
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            other.gameObject.SetActive(false);
         }
     }
 }

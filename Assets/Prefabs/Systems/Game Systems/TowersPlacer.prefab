@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7523696526123665853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5448832472912048368}
+  - component: {fileID: 4557962551143979158}
+  m_Layer: 0
+  m_Name: TowersPlacer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5448832472912048368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523696526123665853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4557962551143979158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523696526123665853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7db1c6d152bfe34b8d8e73d5ea496d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 11400000, guid: d337b0fd151be5742ac6e1373ee41393, type: 2}
+  _preview: {fileID: 0}
+  _surface: {fileID: 0}
+  _checkPathingAvailableFunc: {fileID: 11400000, guid: 2f18ec8feb230704e84a923524cea08f,
+    type: 2}
+  _getCameraFunc: {fileID: 11400000, guid: 6ef1856e1086fd546933a324abed55ca, type: 2}
+  _setGameplayActionMapEvent: {fileID: 11400000, guid: 319c3ed3b9ff7174590673d6475b877f,
+    type: 2}
+  _inputStartPlaceTowerEvent: {fileID: 11400000, guid: ae508c04fd08d2640987de51cc2df63b,
+    type: 2}
+  _inputEndPlaceTowerEvent: {fileID: 11400000, guid: 74191b643aa922a46858311871d35e5c,
+    type: 2}
+  _onTowerHUDClickEvent: {fileID: 11400000, guid: 02e0768a8a8b9e44b8910a0b730040e2,
+    type: 2}
+  _original: {fileID: 0}
+  _updated: {fileID: 0}
+  _isPathValid: 0
+  _isPreviewValid: 0
+  _camera: {fileID: 0}
+  _currentPathTimer: 0
+  _allowPreview: 1
+  _currentTowerType: 0

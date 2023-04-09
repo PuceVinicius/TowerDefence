@@ -1,14 +1,21 @@
 {
-    "name": "TowerDefence.EnemiesManagers",
-    "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+  "name": "TowerDefence.EnemiesManagers",
+  "rootNamespace": "",
+  "references": [
+    "GUID:9abb106e347d9ad41a8e1da253da6d71",
+    "GUID:9ce9cfa92cf840e41a3349d87af8d0f1",
+    "GUID:b47d0f029e315994391e5d94fd95d78a",
+    "GUID:e9821403d55b8b44b8259a549d355123",
+    "GUID:ea00055660153e94da9dc865a3770161",
+    "GUID:2331c772816154a43bf5480544445b89"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
 }

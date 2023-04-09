@@ -6,6 +6,5 @@ namespace TowerDefence.Units
 {
     public class UnitData : ScriptableObject
     {
-        [SerializeField] private float _health;
     }
 }

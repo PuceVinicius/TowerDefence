@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 4839822620349277382, guid: 3e03cba97d1183c4385538b93e42c4e1,
         type: 3}
       propertyPath: m_Name
-      value: BASE_Canvas
+      value: L01_Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 6340918066938575535, guid: 3e03cba97d1183c4385538b93e42c4e1,
         type: 3}

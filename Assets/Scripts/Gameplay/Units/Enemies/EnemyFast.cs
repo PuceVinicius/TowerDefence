@@ -1,21 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TowerDefence.EnemiesCommons;
 using UnityEngine;
 
 namespace TowerDefence.Enemies
 {
-    public class FastUnit : MonoBehaviour
+    public class EnemyFast : Enemy
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
     }
 }

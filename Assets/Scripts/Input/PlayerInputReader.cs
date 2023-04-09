@@ -3,6 +3,7 @@ using Boilerplate.EventChannels;
 using Boilerplate.InputCommons;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.UI;
 
 namespace Boilerplate.Input
 {
@@ -12,6 +13,8 @@ namespace Boilerplate.Input
 
         [Foldout("References")]
         [SerializeField] private PlayerInput _playerInput;
+        [SerializeField] private InputSystemUIInputModule _uiModule;
+        [SerializeField] private InputSystemUIInputModule _gameplayModule;
 
         [Foldout("Broadcasters")]
         [SerializeField] private PlayerInputEventChannel _onControlsChangedEvent;
@@ -44,8 +47,20 @@ namespace Boilerplate.Input
 
         #region Methods
 
-        private void SetUIActionMap() => SwitchActionMap(PlayerInputConsts.ACTION_MAP_UI);
-        private void SetGameplayActionMap() => SwitchActionMap(PlayerInputConsts.ACTION_MAP_GAMEPLAY);
+        private void SetUIActionMap()
+        {
+            _uiModule.enabled = true;
+            _gameplayModule.enabled = false;
+            SwitchActionMap(PlayerInputConsts.ACTION_MAP_UI);
+        }
+
+        private void SetGameplayActionMap()
+        {
+            _uiModule.enabled = false;
+            _gameplayModule.enabled = true;
+            SwitchActionMap(PlayerInputConsts.ACTION_MAP_GAMEPLAY);
+        }
+
         private void SwitchActionMap(string actionMap) => _playerInput.SwitchCurrentActionMap(actionMap);
 
         private void OnToggleInputs(bool value)

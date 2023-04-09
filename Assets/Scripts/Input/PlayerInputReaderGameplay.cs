@@ -13,6 +13,8 @@ namespace Boilerplate.Input
 
         [Foldout("Gameplay Input Events")]
         [SerializeField] private VoidEventChannel _inputGameplayPauseEvent;
+        [SerializeField] private VoidEventChannel _inputStartPlaceTowerEvent;
+        [SerializeField] private VoidEventChannel _inputEndPlaceTowerEvent;
 
         #endregion Variables
 
@@ -24,6 +26,20 @@ namespace Boilerplate.Input
                 return;
 
             EventUtils.BroadcastEvent(_inputGameplayPauseEvent);
+        }
+
+        public void OnPlaceTowerInput(InputAction.CallbackContext context)
+        {
+            switch (context.phase)
+            {
+                case InputActionPhase.Started:
+                    EventUtils.BroadcastEvent(_inputStartPlaceTowerEvent);
+                    break;
+                case InputActionPhase.Canceled:
+                    EventUtils.BroadcastEvent(_inputEndPlaceTowerEvent);
+                    break;
+            }
+
         }
 
         #endregion Gameplay Callbacks
